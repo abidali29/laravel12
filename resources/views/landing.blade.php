@@ -34,22 +34,21 @@
                 </div>
             </div>
 
-            @foreach($contacts as $contact)
-            <div class="row wa-item-chat" onclick="window.location.href='{{ route('chat', ['id' => $contact->id]) }}'">
+            <div class="row wa-item-chat" onClick="abrirChat()">
                 <div class="col-2">
                     <img src="{{ asset('images/profile.png') }}" class="rounded-circle"/>
                 </div>
                 <div class="col-8">
-                    <b>{{ $contact->name }}</b><br/>
-                    <p class="wa-preview-message">{{ $contact->last_message }}</p>
+                    <b>ABid</b><br/>
+                    <p class="wa-preview-message"> AOA</p>
+                    <p class="wa-preview-message">W SLAM</p>
                 </div>
                 <div class="col-2" style="text-align: right">
-                    <span>{{ $contact->last_message_time }}</span>
-                    <span class="badge badge-pill wa-badge">{{ $contact->unread_count }}</span>
+                    <span>10:10PM</span>
+                    <span class="badge badge-pill wa-badge">2</span>
                 </div>
             </div>
             <hr/>
-            @endforeach
         </div>
 
         <!-- Chat Area -->
