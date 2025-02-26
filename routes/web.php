@@ -6,6 +6,6 @@ Route::get('/', function () {
     return view('landing');
 });
 
-Route::get('/chat', function () {
-    return view('chat');
-});
+// Route::get('/chat', function () {
+//     return view('chat');
+// });
